@@ -19,7 +19,7 @@ string Palindrome(string S)
 int main()
 {
     string S = "ABCDCBA";
-    cout << Palindrome(S);
+    Palindrome(S);
  
     return 0;
 }
