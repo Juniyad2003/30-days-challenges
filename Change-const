@@ -1,0 +1,15 @@
+//here I changed value of var using pointers
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int var = 10;
+  
+    int *ptr = &var;
+    *ptr = 12;
+  
+  cout << "var = " << var << endl;
+  
+    return 0;
+}
