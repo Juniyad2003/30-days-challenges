@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int maximum(int a,int b)
+{
+    int array[]={a,b};
+    
+    return array[a<b];
+}
+
+int minimum(int a,int b)
+{
+    int array[]={a,b};
+    
+    return array[a>b];
+}
+
+int main() {
+    
+    cout<<"Maximum element is :"<<maximum(10,20)<<endl;
+    cout<<"Minimum element is :"<<minimum(10,20);
+    
+     return 0;
+}
