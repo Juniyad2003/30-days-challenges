@@ -1,0 +1,26 @@
+
+public class NumberPrinter 
+{
+
+    public static void printNumbersInRange(int low, int high) 
+{
+        if (low > high)
+        {
+            System.out.println("Invalid range: low is greater than high.");
+            return;
+        }
+
+        for (int i = low; i <= high; i++) 
+        {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+ }
+
+    public static void main(String[] args) 
+    {
+        int low = 1;
+        int high = 10;
+        printNumbersInRange(low, high);
+    }
+}
