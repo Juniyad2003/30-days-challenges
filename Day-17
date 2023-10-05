@@ -1,0 +1,38 @@
+#include <iostream>
+#include <unordered_map>
+#include <vector>
+using namespace std;
+
+int mostFrequentElement(const vector<int>& nums)
+{
+    unordered_map<int, int> frequencyMap;
+    int mostFrequent = -1;
+    int maxFrequency = 0;
+
+    for (int num : nums) 
+   {
+        frequencyMap[num]++;
+        
+        if (frequencyMap[num] > maxFrequency) {
+            maxFrequency = frequencyMap[num];
+            mostFrequent = num;
+        }
+    }
+
+    return mostFrequent;
+}
+
+int main() 
+{
+    vector<int> array = {1, 2, 2, 3, 3, 3, 4, 4, 4, 4};
+    
+    int result = mostFrequentElement(array);
+    
+    if (result != -1) {
+        cout << "The most frequent element is: " << result << endl;
+    } else {
+        cout << "The array is empty." << endl;
+    }
+
+    return 0;
+}
