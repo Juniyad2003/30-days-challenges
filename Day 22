@@ -1,0 +1,16 @@
+
+public class StringToIntConversion 
+{
+    public static void main(String[] args) 
+    {
+        String numericString = "12345";
+        try 
+        {
+            int intValue = Integer.parseInt(numericString);
+            System.out.println("Converted Integer: " + intValue);
+        } catch (NumberFormatException e)
+          {
+            System.err.println("Error: Invalid numeric string");
+          }
+    }
+}
