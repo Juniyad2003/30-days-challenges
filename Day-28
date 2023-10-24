@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+void printHelloWorld(int n) 
+{
+    if (n <= 0) 
+    {
+        return;
+    }
+    cout << "Hello, world" <<endl;
+    printHelloWorld(n - 1);
+}
+
+int main() 
+{
+    printHelloWorld(1000);
+    return 0;
+}
